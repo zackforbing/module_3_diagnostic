@@ -10,7 +10,7 @@ describe 'User can access the page', type: :feature do
     # And I fill in the search form with 80203
     click_on 'Locate'
     # And I click "Locate"
-    expect(current_path).to eq("/search?utf8=✓&q=80203&commit=Locate")
+    expect(current_path).to eq(search_path)
     # Then I should be on page "/search" with parameters visible in the url
     expect(page).to have_content()
     # Then I should see a list of the 10 closest stations within 6 miles sorted by distance
