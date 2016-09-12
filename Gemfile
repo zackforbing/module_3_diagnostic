@@ -17,6 +17,7 @@ group :development, :test do
   gem 'faraday'
   gem 'vcr'
   gem 'figaro'
+  gem 'capybara'
 
 end
 
